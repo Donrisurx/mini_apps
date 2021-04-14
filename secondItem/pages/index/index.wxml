@@ -1,13 +1,23 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<swiper indicator-dots="true" autoplay="true" circular="true" indicator-color="white" indicator-active-color="skyblue">
+  <block wx:for="{{hot}}">
+    <swiper-item>
+      <image bindtap='toast' src="{{item.pic}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<block wx:for="{{hot}}"> 
+  <view class="recommend" bindtap='toast'>
+    <view class="picture">
+      <image mode="widthFix" src="{{item.pic}}"/>
+    </view>
+    <view class="info">
+      <text>漫画：《{{item.name}}{{item.id}}》</text>
+      <text>作者：{{item.author}}</text>
+      <text>类型：{{item.tag}}</text>
+      <text>人气：{{item.hot}}</text>
+    </view>
+    <view class="enter">进入>></view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+</block> 

@@ -1,0 +1,28 @@
+<!--pages/detail/detail.wxml-->
+<view><image src="{{hot[0].pic}}" /></view>
+
+<view class="intro">
+  <text>漫画简介</text>
+</view>
+
+<view class="introduce">
+  <view class="item">
+    <text>漫画：</text>
+    <text class='text_color'>《{{hot[0].name}}》</text>
+  </view>
+  <view class="item">
+    <text>作者：</text>
+    <text class='text_color'>{{hot[0].author}}</text>
+  </view>
+  <view class="item">
+    <text>类型：</text>
+    <text class='text_color'>{{hot[0].tag}}</text>
+  </view>
+  <view class="item">
+    <text>人气：</text>
+    <text class='text_color'>{{hot[0].hot}}</text>
+  </view>
+  <view class="desc"><text>{{hot[0].desc}}</text></view>
+</view>
+
+<view class="read"><button>立即阅读</button></view>
