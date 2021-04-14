@@ -13,7 +13,7 @@
       <image mode="widthFix" src="{{item.pic}}"/>
     </view>
     <view class="info">
-      <text>漫画：《{{item.name}}{{item.id}}》</text>
+      <text>漫画：《{{item.name}}》</text>
       <text>作者：{{item.author}}</text>
       <text>类型：{{item.tag}}</text>
       <text>人气：{{item.hot}}</text>

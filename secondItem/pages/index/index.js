@@ -37,7 +37,7 @@ Page({
         //不规范的json格式会报错
         console.log(res.data.hot);
         that.setData({
-          hot:res.data.hot,
+          hot: res.data.hot,
         })
       },
     })
