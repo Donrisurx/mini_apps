@@ -13,9 +13,9 @@ Page({
   toast:function(event){
     // 获取漫画名作为查询目录的请求参数
     console.log(event.currentTarget.dataset);
-    var name = event.currentTarget.dataset.name;
+    var id = event.currentTarget.dataset.id;
     wx.navigateTo({
-      url: '../detail/detail?name=' +name,
+      url: '../detail/detail?id=' +id,
     })
   },
   onLoad: function () {

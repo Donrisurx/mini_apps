@@ -18,7 +18,7 @@
 <view class="title"><text>漫画列表</text></view>
 
 <block wx:for="{{hot}}"> 
-  <view class="recommend" bindtap='toast' data-name="{{item.name}}" >
+  <view class="recommend" bindtap='toast' data-id="{{item.id}}" >
     <view class="picture">
       <image mode="widthFix" src="{{item.pic}}"/>
     </view>

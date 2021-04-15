@@ -17,9 +17,10 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    console.log(options.name)
+    console.log(options.id);
+    var id = options.id;
     wx: wx.request({
-      url: "http://yangli1.gitee.io/mini_apps/source/hot.json",
+      url: "http://yangli1.gitee.io/mini_apps/source/"+ id+".json",
       data: "",
       header: {
         "content-type": "application/json"
