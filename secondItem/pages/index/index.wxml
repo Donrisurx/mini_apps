@@ -1,14 +1,24 @@
 <!--index.wxml-->
+
+<!-- 搜索框 -->
+<view class="search">
+  <input placeholder='漫画名/作者' />
+  <image src="../../images/search.png" class="search_icon" />
+</view>
+
+<!-- 轮播图 -->
 <swiper indicator-dots="true" autoplay="true" circular="true" indicator-color="white" indicator-active-color="skyblue">
   <block wx:for="{{hot}}">
     <swiper-item>
-      <image bindtap='toast' src="{{item.pic}}"/>
+      <image bindtap='toast' data-num='{{a}}' src="{{item.pic}}"/>
     </swiper-item>
   </block>
 </swiper>
 
+<view class="title"><text>漫画列表</text></view>
+
 <block wx:for="{{hot}}"> 
-  <view class="recommend" bindtap='toast'>
+  <view class="recommend" bindtap='toast' data-name="{{item.name}}" >
     <view class="picture">
       <image mode="widthFix" src="{{item.pic}}"/>
     </view>

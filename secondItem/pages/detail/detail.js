@@ -5,14 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    show:true,
+  },
+
+  change:function(){
+    this.show = !this.show;
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function () {
+  onLoad: function (options) {
     var that = this;
+    console.log(options.name)
     wx: wx.request({
       url: "http://yangli1.gitee.io/mini_apps/source/hot.json",
       data: "",

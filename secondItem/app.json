@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/detail/detail",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

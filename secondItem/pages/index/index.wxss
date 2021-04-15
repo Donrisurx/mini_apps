@@ -1,8 +1,36 @@
 /**index.wxss**/
+.search{
+  width: 90%;
+  height: 35px;
+  margin: 2% auto;
+  border: 1px solid steelblue;
+  border-radius: 35px;
+  position: relative;
+}
+input{
+  width: 90%;
+  height: 35px;
+  margin-left: 5%;
+  border: none;
+}
+.search_icon{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 9%;
+  right: 4%;
+}
+.title{
+  margin: 10px 0;
+  border-left: 16px solid #27331B;
+  padding-left: 2%;
+  font-weight: bold; 
+}
+
 .recommend{
   height: 300rpx;
   border: 1px solid #999;
-  margin: 20px 5px;
+  margin: 0 5px;
   position: relative;
   box-shadow: 4px 1px 10px #27331B;
   border-radius: 10px;
@@ -26,7 +54,8 @@ text{
 }
 .enter{
   position: absolute;
-  top: 20rpx;
+  top: 50%;
   right: 5%;
   color: red;
+  transform: translateY(-50%);
 }

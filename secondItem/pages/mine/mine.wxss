@@ -1,1 +1,60 @@
 /* pages/mine/mine.wxss */
+.user{
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  margin: 10px 0;
+}
+.user_img{
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  overflow: hidden;
+  border-radius: 80px;
+}
+.time{
+  font-size: 12px;
+}
+.day_num{
+  color: #1296db;
+  margin: 0 2%;
+}
+image{
+  width: 100%;
+}
+.nickName{
+  font-weight:bold;
+  margin: 5px 0;
+}
+.options{
+  background-color: #f2f2f2;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 2px; 
+  position: relative;
+}
+
+.mine_img{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.right{
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  transform: translateY(-50%);
+}
+.item{
+  vertical-align: middle;
+  margin-left: 5%;
+  margin-right: 60%;
+  width: 50%;
+}
+
+button{
+  margin-top: 10px;
+}

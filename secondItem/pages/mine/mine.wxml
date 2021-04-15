@@ -1,2 +1,35 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class='user'>
+  <view class='user_img'>
+     <image mode='widthFix' src='{{avatarUrl}}'/> 
+  </view>
+  <view><text class='nickName'>{{nickName}}</text></view>
+  <view class='time'>
+    <text>会员时长剩余</text>
+    <text class='day_num'>0</text>
+    <text>天</text>
+  </view>
+</view>
+
+<view class='options'>
+  <image class='mine_img' src='../../images/book.png' />
+  <text class='item'>我的书架</text>
+  <image class='right' src='../../images/right.png' />
+</view>
+<view class='options'>
+  <image class='mine_img' src='../../images/VIP.png' />
+  <text class='item'>会员充值</text>
+  <image class='right' src='../../images/right.png' />
+</view>
+<view class='options'>
+  <image class='mine_img' src='../../images/pay.png' />
+  <text class='item'>漫画币充值</text>
+  <image class='right' src='../../images/right.png' />
+</view>
+<view class='options'>
+  <image class='mine_img' src='../../images/record.png' />
+  <text class='item'>我的记录</text>
+  <image class='right' src='../../images/right.png' />
+</view>
+
+<view><button>退出当前用户</button></view>

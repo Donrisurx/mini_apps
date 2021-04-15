@@ -9,16 +9,13 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
   //页面跳转
-  toast:function(){
+  toast:function(event){
+    // 获取漫画名作为查询目录的请求参数
+    console.log(event.currentTarget.dataset);
+    var name = event.currentTarget.dataset.name;
     wx.navigateTo({
-      url: '../detail/detail',
+      url: '../detail/detail?name=' +name,
     })
   },
   onLoad: function () {
@@ -35,7 +32,6 @@ Page({
       success: function(res) {
         //dataTpye为json时，会自动对请求结果执行一次JSON.parse
         //不规范的json格式会报错
-        console.log(res.data.hot);
         that.setData({
           hot: res.data.hot,
         })
